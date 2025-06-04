@@ -11,6 +11,9 @@ importers:
       csvtojson:
         specifier: ^2.0.10
         version: 2.0.10
+      openai:
+        specifier: ^5.1.0
+        version: 5.1.0
 
 packages:
 
@@ -27,6 +30,18 @@ packages:
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
+  openai@5.1.0:
+    resolution: {integrity: sha512-YQBgPJykHrDOlngB/8QpOsFNg36yofBatpeDWg1zejl9R59/ELuN7AMPSU95ZIdChbKc/o5vg1UnBJ1OEB0IJA==}
+    hasBin: true
+    peerDependencies:
+      ws: ^8.18.0
+      zod: ^3.23.8
+    peerDependenciesMeta:
+      ws:
+        optional: true
+      zod:
+        optional: true
 
   strip-bom@2.0.0:
     resolution: {integrity: sha512-kwrX1y7czp1E69n2ajbG65mIo9dqvJ+8aBQXOGVxqwvNbsXdFM6Lq37dLAY3mknUwru8CfcCbfOLL/gMo+fi3g==}
@@ -45,6 +60,8 @@ snapshots:
   is-utf8@0.2.1: {}
 
   lodash@4.17.21: {}
+
+  openai@5.1.0: {}
 
   strip-bom@2.0.0:
     dependencies:
